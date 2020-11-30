@@ -5,7 +5,22 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>ARTSANDIEGO.</title>
+        <title>A R T S A N D I E G O .</title>
+        <meta name="title" content="A R T S A N D I E G O ." />
+        <link rel="icon" type="image/png" href="/artsandiego-icon.png" />
+        <meta name="description" content="Creative Front-End Web Developer, UI Designer, and UX Practitioner."/>
+
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://artsandiego.dev/"/>
+        <meta property="og:title" content="A R T S A N D I E G O ."/>
+        <meta property="og:description" content="Creative Front-End Web Developer, UI Designer, and UX Practitioner."/>
+        <meta property="og:image" content="/artsandieg-crtved.jpg"/>
+
+        <meta property="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:url" content="https://artsandiego.dev/"/>
+        <meta property="twitter:title" content="A R T S A N D I E G O ."/>
+        <meta property="twitter:description" content="Creative Front-End Web Developer, UI Designer, and UX Practitioner."/>
+        <meta property="twitter:image" content="/artsandieg-crtved.jpg"/>
       </Head>
       <main>
         <div className="image__container">
