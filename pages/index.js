@@ -16,6 +16,7 @@ export default function Home() {
           <a href="https://www.github.com/crtved" target="_blank" rel="noopener nofollow">Github</a>
           <a href="https://www.instagram.com/crt.ved/" target="_blank" rel="noopener nofollow">Instagram</a>
           <a href="https://www.linkedin.com/in/artsandiego/" target="_blank" rel="noopener nofollow">LinkedIn</a>
+          <a href="https://www.notion.so/Art-San-Diego-76e258b0b87d47eb8e3db7c426e8a376" target="_blank" rel="noopener nofollow">Portfolio</a>
         </div>
       </main>
       <style jsx>{`
