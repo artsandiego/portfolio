@@ -9,6 +9,7 @@ export default function Home() {
         <meta name="title" content="A R T S A N D I E G O ." />
         <link rel="icon" type="image/png" href="/artsandiego-icon.png" />
         <meta name="description" content="Creative Front-End Web Developer, UI Designer, and UX Practitioner."/>
+        <meta name="keywords" content="artsandiego, crtved, web, developer, front-end, freelance, website, designer, ui, ux"/>
 
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://artsandiego.dev/"/>
@@ -25,7 +26,7 @@ export default function Home() {
       <main>
         <div className="image__container">
           <Image className="image__img" src="/artsandiego.png" alt="Art San Diego Logo" height={627} width={699}/>
-          <p className="image__title">ARTSANDIEGO.</p>
+          <h1 className="image__title">ARTSANDIEGO.</h1>
         </div>
         <div className="social__container">
           <a href="https://www.notion.so/Art-San-Diego-76e258b0b87d47eb8e3db7c426e8a376" target="_blank" rel="noopener nofollow">Portfolio</a>
@@ -59,9 +60,9 @@ export default function Home() {
         }
         .image__title {
           font-family: 'Helvetica';
-          font-size: 1rem;
+          font-size: 1rem !important;
           letter-spacing: 4px;
-          font-weight: regular;
+          font-weight: regular !important;
           color: #202426;
         }
         .social__container {
