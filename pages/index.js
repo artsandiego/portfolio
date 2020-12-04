@@ -21,7 +21,8 @@ export default function Home() {
         <meta property="twitter:url" content="https://artsandiego.dev/"/>
         <meta property="twitter:title" content="A R T S A N D I E G O ."/>
         <meta property="twitter:description" content="Creative Front-End Web Developer, UI Designer, and UX Practitioner."/>
-        <meta property="twitter:image" content="/artsandieg-crtved.jpg"/>
+        <meta property="twitter:image" content="/artsandieg-crtved.jpg" />
+        <script data-ad-client="ca-pub-7734586900480329" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Head>
       <main>
         <div className="image__container">
