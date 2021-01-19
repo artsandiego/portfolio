@@ -35,6 +35,7 @@ export default function Home() {
           <a href="https://www.github.com/crtved" target="_blank" rel="noopener nofollow">Github</a>
           <a href="https://www.behance.net/crtved" target="_blank" rel="noopener nofollow">Behance</a>
           <a href="https://www.instagram.com/crt.ved/" target="_blank" rel="noopener nofollow">Instagram</a>
+          <a href="https://www.twitter.com/crtved/" target="_blank" rel="noopener nofollow">Twitter</a>
         </div>
       </main>
       <style jsx>{`
