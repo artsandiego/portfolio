@@ -44,6 +44,9 @@
   position: absolute;
   pointer-events: none;
   z-index: 100;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
   .cursor {
     border: 3px solid white;
     position: absolute;
@@ -78,6 +81,9 @@
       background-size: contain;
       top: auto;
       bottom: -130px;
+      @media screen and (max-width: 600px) {
+        background-image: none;
+      }
     }
   }
   &.active-photo-des {
@@ -91,6 +97,9 @@
       background-size: contain;
       top: auto;
       bottom: -130px;
+      @media screen and (max-width: 600px) {
+        background-image: none;
+      }
     }
   }
 }
