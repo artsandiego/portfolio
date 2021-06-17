@@ -3,7 +3,7 @@ section.work {
   padding-top: 150px;
   @include maxwidth;
   @media screen and (max-width: 600px) {
-    margin-top: 0;
+    margin-top: 20rem;
     width: 80%;
   }
   .title {
@@ -32,6 +32,9 @@ section.work {
     }
   }
   .illustrated-logo {
+    @media screen and (max-width:600px) {
+      display: none;
+    }
     img {
       width: 180px;
     }
