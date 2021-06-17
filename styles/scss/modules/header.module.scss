@@ -1,0 +1,53 @@
+header {
+  @include maxwidth;
+  padding-top: 100px;
+  position: fixed;
+  // width: 100%;
+  right: 0;
+  left: 0;
+  @media screen and (max-width: 1920px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 1740px) {
+    width: 80%;
+  }
+  &>div {
+    @media screen and (max-width: 425px) {
+      flex-direction: column;
+      align-items: flex-end !important;
+    }
+    nav.navigation {
+      &>a {
+        @media screen and (max-width: 425px) {
+          font-size: 10px;
+        }
+      }
+    }
+    &>div {
+      @media screen and (max-width: 425px) {
+        margin-right: 0 !important;  
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .socials {
+    background-image: url('/assets/icons/social-media-icons-sprite-image.svg');
+    height: 26px;
+    &:nth-of-type(1) {
+      background-position: 0 0;
+      width: 40px;
+    }
+    &:nth-of-type(2) {
+      background-position: -60px 0;
+      width: 26px;
+    }
+    &:nth-of-type(3) {
+      background-position: -105px 0;
+      width: 20px;
+    }
+    &:nth-of-type(4) {
+      background-position: 26px 0;
+      width: 26px;
+    }
+  }
+}

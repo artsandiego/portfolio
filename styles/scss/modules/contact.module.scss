@@ -1,0 +1,27 @@
+section.contact {
+  margin: 400px 0;
+  @include maxwidth;
+  @media screen and (max-width:1740px) {
+    width: 80%;
+  }
+  &>p {
+    @media screen and (max-width:1740px) {
+      font-size: 100px;
+      width: 70%;
+      margin-right: 0;
+      margin-left: auto;
+    }
+    @media screen and (max-width:1440px) {
+      font-size: 60px;
+      width: 70%;
+      margin-right: 0;
+      margin-left: auto;
+    }
+    @media screen and (max-width:600px) {
+      font-size: 60px;
+      width: 100%;
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+}

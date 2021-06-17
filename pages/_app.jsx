@@ -2,6 +2,10 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
 
+/* Style */
+import '../styles/scss/app.scss'
+import '../styles/tailwind/tailwind.css'
+
 const App = ({ Component, pageProps }) => {
   const router = useRouter()
   useEffect(() => {
@@ -14,7 +18,11 @@ const App = ({ Component, pageProps }) => {
     }
   }, [router.events])
 
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default App

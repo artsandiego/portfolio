@@ -1,0 +1,78 @@
+/* primary cta */
+.cta {
+  transform: skewX(-20deg);
+  display: inline-block;
+  right: 200px;
+  bottom: 15rem;
+  @media screen and (max-width: 1440px) {
+    right: -50px;
+  }
+  @media screen and (max-width: 768px) {
+    right: 0px;
+    bottom: 20rem;
+  }
+  @media screen and (max-width: 600px) {
+    right: -20px;
+    bottom: 23rem;
+  }
+  @media screen and (max-width: 425px) {
+    right: -20px;
+    bottom: 10rem;
+  }
+  &.right {
+    transform: skewX(20deg);
+  }
+  img {
+    height: 225px;
+    width: 225px;
+    animation: rotate 50s infinite linear;
+    transition: all 0.5s ease-in-out;
+    @media screen and (max-width: 768px) {
+      height: 150px;
+      width: 150px;
+    }
+    @media screen and (max-width: 600px) {
+      height: 100px;
+      width: 100px;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.head-cta {
+  transition: all 1.5s ease-in-out;
+  transition-delay: 0.8s;
+  opacity: 0;
+  &.enter {
+    opacity: 1;
+  }
+}
+
+.scroll {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transition-delay: 2s;
+  @media screen and (max-width: 600px) {
+    display: none !important;
+  }
+  span {
+    width: 1px;
+    height: 0;
+    transition: all 1s ease-in-out;
+    transition-delay: 2s;
+  }
+  &.stretch {
+    opacity: 1;
+    span {
+      height: 400px
+    }
+  }
+}
