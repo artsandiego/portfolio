@@ -27,7 +27,7 @@ export default class MyDocument extends Document {
           <meta name="title" content="Art San Diego | CRTVED" />
           <link rel="icon" type="image/png" href="/artsandiego-icon.png" />
           <meta name="description" content="CRTVED /creative dev/ is a sole proprietorship that aims to provide a modern UI design approach and up-to-date website development methods for your digital needs."/>
-          <meta name="keywords" content="artsandiego, crtved, web, developer, front-end, freelance, website, designer, ui, ux"/>
+          <meta name="keywords" content="artsandiego, crtved, web, developer, front-end, freelance, website, designer, ui, ux, startup, small business"/>
 
           <meta property="og:type" content="website"/>
           <meta property="og:url" content="https://artsandiego.dev/"/>

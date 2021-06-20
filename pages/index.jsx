@@ -118,7 +118,7 @@ const Home = () => {
               <div className="default-paragraph inline-flex flex-row justify-start">             
                 <span className="line"></span>
                 <p className="text-25 text-white font-spectral">
-                  My first attempt to be creative was when I got curious about how to create my logo. It was 2012, I was using Photoshop CS6.
+                  My first attempt to be creative was back in 2012, I was using Photoshop CS6 and trying to create my own logo.
                 </p>
               </div>
 
@@ -156,7 +156,7 @@ const Home = () => {
               <div className="default-paragraph work-section inline-flex flex-row justify-start">             
                 <span className="line"></span>
                 <p className="text-25 text-white font-spectral">
-                From user research to UI design (and sometimes brand identity design), static portfolio sites or CMS based websites. I help awesome people like you build well-crafted websites.
+                From user research to UI design (and sometimes brand identity design), static portfolio sites or CMS based websites. I help <span className="text-primary">startups</span>, <span className="text-primary">small businesses</span> and awesome people like you build well-crafted digital experience.
                 </p>
               </div>
               <div className="illustrated-logo absolute right-0 bottom-0">
@@ -179,7 +179,7 @@ const Home = () => {
                 <div className="project-image work-content__image">
                   <div className="placeholder"></div>
                   <Image src="/assets/images/innersloth.jpg" alt="Innersloth website design thumbnail" height="600" width="550" />
-                  <a href="https://www.behance.net/gallery/121735575/Innersloth-Website-UIUX-Design-Concept" rel="noopener noreferrer" className="cta left absolute overflow-hidden text-transparent z-10">
+                  <a href="https://www.behance.net/gallery/121735575/Innersloth-Website-UIUX-Design-Concept" rel="noopener noreferrer" className="cta left absolute overflow-hidden text-transparent z-10" target="_blank">
                     View Case Study
                     <img src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" />
                   </a>
@@ -199,7 +199,7 @@ const Home = () => {
                 <div className="project-image work-content__image">
                   <div className="placeholder"></div>
                   <Image src="/assets/images/sociov.jpg" alt="Sociov website design thumbnail" height="600" width="550" />
-                  <a href="https://www.behance.net/gallery/121735799/Sociov-Website-UIUX-Design-Concept" rel="noopener noreferrer" className="cta right absolute overflow-hidden text-transparent z-10">
+                  <a href="https://www.behance.net/gallery/121735799/Sociov-Website-UIUX-Design-Concept" rel="noopener noreferrer" className="cta right absolute overflow-hidden text-transparent z-10" target="_blank">
                     View Case Study
                     <img src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" />
                   </a>
@@ -219,7 +219,7 @@ const Home = () => {
                 <div className=" project-image work-content__image">
                   <div className="placeholder"></div>
                   <Image src="/assets/images/filidianbank.jpg" alt="Filidian Bank website design thumbnail" height="600" width="550" />
-                  <a href="#" className="cta left absolute overflow-hidden text-transparent z-10">
+                  <a href="#" className="cta left absolute overflow-hidden text-transparent z-10" target="_blank">
                     View Case Study
                     <img src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" />
                   </a>
@@ -239,7 +239,7 @@ const Home = () => {
                 <div className="project-image work-content__image">
                   <div className="placeholder"></div>
                   <Image src="/assets/images/kamiai.jpg" alt="Kami Ai logo" height="600" width="550" />
-                  <a href="#" className="cta right absolute overflow-hidden text-transparent z-10">
+                  <a href="#" className="cta right absolute overflow-hidden text-transparent z-10" target="_blank">
                     View Case Study
                     <img src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" />
                   </a>
@@ -259,7 +259,7 @@ const Home = () => {
                 <div className="project-image work-content__image">
                   <div className="placeholder"></div>
                   <Image src="/assets/images/divine.jpg" alt="Divine logo" height="600" width="550" />
-                  <a href="#" className="cta left absolute overflow-hidden text-transparent z-10">
+                  <a href="https://www.behance.net/gallery/115433221/Divine-Branding" className="cta left absolute overflow-hidden text-transparent z-10" target="_blank">
                     View Case Study
                     <img src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" />
                   </a>
@@ -279,7 +279,7 @@ const Home = () => {
                 <div className="project-image work-content__image">
                   <div className="placeholder"></div>
                   <Image src="/assets/images/cena.jpg" alt="CENA Footwear logo" height="600" width="550" />
-                  <a href="#" className="cta right absolute overflow-hidden text-transparent z-10">
+                  <a href="#" className="cta right absolute overflow-hidden text-transparent z-10" target="_blank">
                     View Case Study
                     <img src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" />
                   </a>
