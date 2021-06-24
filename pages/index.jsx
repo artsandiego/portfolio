@@ -219,7 +219,7 @@ const Home = () => {
                 <div className=" project-image work-content__image">
                   <div className="placeholder"></div>
                   <Image src="/assets/images/filidianbank.jpg" alt="Filidian Bank website design thumbnail" height="600" width="550" />
-                  <a href="#" className="cta left absolute overflow-hidden text-transparent z-10" target="_blank">
+                  <a href="https://www.behance.net/gallery/122173739/Filidian-Bank-Website-UIUX-Design-Development" rel="noopener noreferrer" className="cta left absolute overflow-hidden text-transparent z-10" target="_blank">
                     View Case Study
                     <img src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" />
                   </a>
