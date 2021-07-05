@@ -100,7 +100,7 @@ const Home = () => {
             <h1 className="intro-text text-white text-125 font-spectral leading-tight">
               <span className="intro-text-items ml-20">Creative Front-end Web</span><br />
               <span className="intro-text-items text-white font-spectral leading-tight"><span className=" text-primary hover-dev">Developer</span> & </span><br />
-              <span className="intro-text-items ml-60">UI/UX <span className="text-primary hover-des">Designer</span></span>
+              <span className="intro-text-items ml-60">UI <span className="text-primary hover-des">Designer</span></span>
             </h1>
             <a href="mailto:crtved.artsandiego@gmail.com" className="cta head-cta absolute overflow-hidden text-transparent">
               Let's Talk
@@ -118,21 +118,20 @@ const Home = () => {
               <div className="default-paragraph inline-flex flex-row justify-start">             
                 <span className="line"></span>
                 <p className="text-25 text-white font-spectral">
-                  My first attempt to be creative was back in 2012, I was using Photoshop CS6 and trying to create my own logo.
+                  I started as an aspiring Graphic Designer back in 2012.
                 </p>
               </div>
 
               <div className="default-paragraph inline-flex flex-row justify-start">             
                 <span className="line"></span>
                 <p className="p2 text-25 text-white font-spectral">
-                After university, I pursue a career in web development and started building for the web since 2016.
-                </p>
+                  I studied Information Technology and after University I decided to work as front-end web developer. I'm always curious how to bridge the gap between form and function.</p>
               </div>
 
               <div className="default-paragraph inline-flex flex-row justify-start">             
                 <span className="line"></span>
                 <p className="p3 text-25 text-white font-spectral">
-                  And now, I enjoy creating aesthetic experiences for the web through UI/UX design and Creative Front-End Web Development.
+                  Luckily I find a way 🎉 now I enjoy creating aesthetic experiences for the web through UI design and Creative Front-End Web Development.
                 </p>
               </div>
 
@@ -156,7 +155,8 @@ const Home = () => {
               <div className="default-paragraph work-section inline-flex flex-row justify-start">             
                 <span className="line"></span>
                 <p className="text-25 text-white font-spectral">
-                From user research to UI design (and sometimes brand identity design), static portfolio sites or CMS based websites. I help <span className="text-primary">startups</span>, <span className="text-primary">small businesses</span> and awesome people like you build well-crafted digital experience.
+                  I'm a developer and a designer who crafts <span className="text-primary">visual elements for the web.</span> 
+                  My interest in design led me to study other design fields like brand identity design, graphic design and print.
                 </p>
               </div>
               <div className="illustrated-logo absolute right-0 bottom-0">
@@ -172,7 +172,7 @@ const Home = () => {
                   <div className="default-paragraph inline-flex flex-row justify-start">             
                     <span className="line"></span>
                     <p className="text-25 text-white font-spectral">
-                      UI/UX design concept for a game development company.
+                      UI design concept for a game development company.
                     </p>
                   </div>
                 </div>
