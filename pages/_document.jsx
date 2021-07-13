@@ -33,13 +33,13 @@ export default class MyDocument extends Document {
           <meta property="og:url" content="https://artsandiego.dev/"/>
           <meta property="og:title" content="CRTVED"/>
           <meta property="og:description" content="/kree·ay·tuhv/ | Crafting digital aesthetic experiences"/>
-          <meta property="og:image" content="../public/assets/images/artsandiego-crtved-social-image.png"/>
+          <meta property="og:image" content="/artsandiego-crtved-social-image.png"/>
 
-          <meta property="twitter:card" content="summary_large_image"/>
+          <meta property="twitter:card" content="summary"/>
           <meta property="twitter:url" content="https://artsandiego.dev/"/>
           <meta property="twitter:title" content="CRTVED"/>
           <meta property="twitter:description" content="/kree·ay·tuhv/ | Crafting digital aesthetic experiences"/>
-          <meta property="twitter:image" content="../public/assets/images/artsandiego-crtved-social-image.png" />
+          <meta property="twitter:image" content="/artsandiego-crtved-social-image.png" />
         </Head>
         <body>
           <Main />
