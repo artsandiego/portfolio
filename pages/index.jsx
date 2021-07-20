@@ -118,20 +118,20 @@ const Home = () => {
               <div className="default-paragraph inline-flex flex-row justify-start">             
                 <span className="line"></span>
                 <p className="text-25 text-white font-spectral">
-                  I started as an aspiring Graphic Designer back in 2012.
+                 It all started when I was in 5th grade. I have this Marvel Heroes coloring book, but instead of putting colors in it, I traced the illustrations <span className="text-primary font-bold">and act as if I draw them myself</span>.
                 </p>
               </div>
 
               <div className="default-paragraph inline-flex flex-row justify-start">             
                 <span className="line"></span>
                 <p className="p2 text-25 text-white font-spectral">
-                  I studied Information Technology and after University I decided to work as front-end web developer. I'm always curious how to bridge the gap between form and function.</p>
+                Fast forward to College. I took BSIT and decided to work as a <span className="text-primary font-bold">front-end web developer</span>. I was so sure that the path I chose will eventually lead me to something <span className="text-primary font-bold">bigger</span>.</p>
               </div>
 
               <div className="default-paragraph inline-flex flex-row justify-start">             
                 <span className="line"></span>
                 <p className="p3 text-25 text-white font-spectral">
-                  Luckily I find a way 🎉 now I enjoy creating aesthetic experiences for the web through UI design and Creative Front-End Web Development.
+                  And now, the present me enjoys creating <span className="text-primary font-bold">aesthetic experiences for the web</span> and with a mission to inspire people who wanted to pursue their passion in design or development.
                 </p>
               </div>
 
@@ -149,14 +149,16 @@ const Home = () => {
             </div>
           </section>
           <section id="work" className="work skew-element">
-            <h1 className="title relative z-10 inline-block text-white text-100 font-spectral leading-tight">Work</h1>
+            <h1 className="title relative z-10 inline-block text-white text-100 font-spectral leading-tight">CRTVED</h1>
 
             <div className="flex flex-row flex-1 relative h-40">
               <div className="default-paragraph work-section inline-flex flex-row justify-start">             
                 <span className="line"></span>
                 <p className="text-25 text-white font-spectral">
-                  I'm a developer and a designer who crafts <span className="text-primary">visual elements for the web.</span> 
-                  My interest in design led me to study other design fields like brand identity design, graphic design and print.
+                  The brand <a className="underline text-primary font-bold" href="https://www.instagram.com/_crt.ved" rel="noopener noreferrer">CRTVED</a> <span className="opacity-50">(Pronounced /kree·ay·tuhv/ a wordplay for Creative Developer)</span> was established to create a platform where I can be my creative self. At CRTVED we prioritize experience as we believe that <span className="text-primary font-bold">human experience bridges the gap between form and function</span>.
+                  <div className="mt-4">
+                    Here are some of our work.
+                  </div>
                 </p>
               </div>
               <div className="illustrated-logo absolute right-0 bottom-0">
@@ -289,7 +291,9 @@ const Home = () => {
             </div>
           </section>
           <section className="contact z-20 relative">
-            <p className="text-right text-125 font-spectral text-white">Got any <span className="text-primary">awesome idea</span> in your mind? I'm always open for <span className="text-primary">creative discussion</span><br/><a className="text-white underline placeholder" href="mailto:crtved.artsandiego@gmail.com">Let's talk</a>.</p>
+            <p className="text-right text-125 font-spectral text-white">Something in your mind? perhaps an <span className="text-primary">idea</span>? I'm available for <span className="text-primary">
+            creative discussion
+            </span>.<br /><a className="text-white underline placeholder" href="mailto:crtved.artsandiego@gmail.com">Let's talk</a>.</p>
           </section>
         </main>
         <footer className="footer flex flex-row relative bg-primary z-20">
@@ -298,19 +302,20 @@ const Home = () => {
             <div className="mt-8">
               <a className="font-montserrat text-16 text-secondary" href="mailto:crtved.artsandiego@gmail.com">crtved.artsandiego@gmail.com</a>
               <div className="flex flex-row mt-8 z-20">
+                <a href="https://www.github.com/crtved" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Behance</a>
                 <a href="https://www.behance.net/crtved" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Behance</a>
-                <a href="https://www.linkedin.com/in/artsandiego/" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">LinkedIn</a>
-                <a href="https://fb.com/creativedeveloperph" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Facebook</a>
-                <a href="https://www.instagram.com/crt.ved" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Instagram</a>
+                <a href="https://www.instagram.com/crt.ved" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/artsandiego/" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Facebook</a>
+                <a href="https://www.fb.com/creativedeveloperph" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Instagram</a>
               </div>
             </div>
           </div>
           <div className="mx-32">
             <p className="font-spectral text-secondary text-25">Experience</p>
             <div className="mt-8">
-              <p className="font-montserrat text-16 text-secondary mb-4">Independent Creative Front-End Web Developer and UI/UX Designer</p>
-              <p className="font-montserrat text-16 text-secondary mb-4">Independent Web Development and UI/UX Design Consultant, and Senior Team Lead</p>
-              <p className="font-montserrat text-16 text-secondary mb-4">Senior Creative Front-End Web Developer</p>
+              <p className="font-montserrat text-16 text-secondary mb-4">Creative Front-End Web Developer, UI/UX Designer and Founder <a className="underline font-bold" href="https://www.instagram.com/_crt.ved/" rel="noopener noreferrer">@CRTVED</a></p>
+              <p className="font-montserrat text-16 text-secondary mb-4">Independent Web Development and UI Design Consultant</p>
+              <p className="font-montserrat text-16 text-secondary mb-4">Creative Front-End Web Developer (Team Lead)</p>
               <p className="font-montserrat text-16 text-secondary mb-4">Junior Front-End Web Developer</p>
               <a href="https://drive.google.com/file/d/18QoJVjZsRciNQa7dkz6FM4fvakqF1JlX/view" rel="noopener noreferrer" target="_blank" className="alt font-montserrat text-16 text-secondary font-bold underline uppercase">DOWNLOAD CV</a>
             </div>
