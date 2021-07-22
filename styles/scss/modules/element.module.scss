@@ -350,6 +350,19 @@
 }
 
 .for-o-for {
+  @media screen and (max-width: 1024px) {
+    text-align: center;
+  }
+  p {
+    &:first-of-type {
+      @media screen and (max-width: 1024px) {
+        font-size: 80px;
+      };
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 18px;
+    };
+  }
   .c {
     height: 100px;
     width: 100px;

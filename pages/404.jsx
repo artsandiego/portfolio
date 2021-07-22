@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
-import Link from 'next/link';
 
 const custom404 = () => {
+  const [click, setClick] = useState("Well look who's here...");
   useEffect(() => {
     /* cursor follow animation */
     let cursorContainer = document.querySelector(".cursor-container");
@@ -29,6 +29,8 @@ const custom404 = () => {
 
     document.querySelector('.c').addEventListener('click', () => {
       document.querySelector('.c-vid').classList.add('active');
+      document.querySelector('.c-text').classList.add('hidden');
+      setClick("Oh sh%$#!")
     });
   })
   return (
@@ -40,9 +42,9 @@ const custom404 = () => {
       <main className="for-o-for bg-primary flex flex-col items-center justify-center h-screen w-screen overflow-hidden">
         <div className="c"></div>
         <img className="c-vid" src="/assets/images/cat.gif" alt="Surprised cat" />
-        <p className="font-spectral text-125 text-secondary">Well look who's here...</p>
-        <p className="font-montserrat text-25 text-secondary mb-16">You're in the void, nothing to show here...trust me nothing interesting here...</p>
-        <Link href="/"><a className="alt font-montserrat text-16 text-secondary">Go Home</a></Link>
+        <p className="font-spectral text-125 text-secondary">{ click }</p>
+        <p className="c-text font-montserrat text-25 text-secondary mb-16">Welcome to the void... nothing to see here... trust me.</p>
+        <a href="/" className="alt font-montserrat text-16 text-secondary">Take me Home!</a>
       </main>
     </>
   )

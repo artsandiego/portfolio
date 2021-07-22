@@ -118,14 +118,14 @@ const Home = () => {
               <div className="default-paragraph inline-flex flex-row justify-start">             
                 <span className="line"></span>
                 <p className="text-25 text-white font-spectral">
-                 It all started when I was in 5th grade. I have this Marvel Heroes coloring book, but instead of putting colors in it, I traced the illustrations <span className="text-primary font-bold">and act as if I draw them myself</span>.
+                 It all started when I was in 5th grade. I have this Marvel Heroes coloring book, but instead of putting colors in it, I traced the illustrations <span className="text-primary font-bold">and act as if I draw them myself</span>. Weird way of showing creativity huh.
                 </p>
               </div>
 
               <div className="default-paragraph inline-flex flex-row justify-start">             
                 <span className="line"></span>
                 <p className="p2 text-25 text-white font-spectral">
-                Fast forward to College. I took BSIT and decided to work as a <span className="text-primary font-bold">front-end web developer</span>. I was so sure that the path I chose will eventually lead me to something <span className="text-primary font-bold">bigger</span>.</p>
+                Fast forward to college, I took BSIT and immediately fell in love with <span className="text-primary font-bold">coding</span>. And so, with the passion I have for design and love for writing code, I decided to start my career as a <span className="text-primary font-bold">Front-End Web Developer</span>. I was so sure that this decision will lead me to something bigger.</p>
               </div>
 
               <div className="default-paragraph inline-flex flex-row justify-start">             
@@ -155,20 +155,25 @@ const Home = () => {
               <div className="default-paragraph work-section inline-flex flex-row justify-start">             
                 <span className="line"></span>
                 <p className="text-25 text-white font-spectral">
-                  The brand <a className="underline text-primary font-bold" href="https://www.instagram.com/_crt.ved" rel="noopener noreferrer">CRTVED</a> <span className="opacity-50">(Pronounced /kree·ay·tuhv/ a wordplay for Creative Developer)</span> was established to create a platform where I can be my creative self. At CRTVED we prioritize experience as we believe that <span className="text-primary font-bold">human experience bridges the gap between form and function</span>.
+                  The brand <a className="alt underline text-primary font-bold" href="https://www.instagram.com/_crt.ved" rel="noopener noreferrer" target="_blank">CRTVED</a> <span className="opacity-50">(Pronounced /kree·ay·tuhv/ a wordplay for Creative Developer)</span> was established to create a platform where I can be my creative self. At CRTVED we prioritize experience as we believe that <span className="text-primary font-bold">human experience bridges the gap between form and function</span>.
                   <div className="mt-4">
                     Here are some of our work.
+                  </div>
+                  <div>
+                    Visit our <a className="alt text-primary font-bold underline" href="https://github.com/crtved" rel="noopener noreferrer" target="_blank">Github</a> or <a className="alt text-primary font-bold underline" href="https://behance.net/crtved" rel="noopener noreferrer" target="_blank">Behance</a> for more.
                   </div>
                 </p>
               </div>
               <div className="illustrated-logo absolute right-0 bottom-0">
-                <img src="/assets/icons/logodrawing.svg" alt="Art San Diego logo pencil drawing" />
+                <a className="block" href="/void" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/icons/logodrawing.svg" alt="Art San Diego logo pencil drawing" />
+                </a>
               </div>
             </div>
 
             <div className="work-content">
               
-              <div className="project flex flex-row w-full justify-center mb-44 skew-element">
+              {/* <div className="project flex flex-row w-full justify-center mb-44 skew-element">
                 <div className="project-title flex flex-col justify-end pb-32 mr-32">
                   <h2 className="work-title font-spectral text-primary text-60 z-20">Innersloth website</h2>
                   <div className="default-paragraph inline-flex flex-row justify-start">             
@@ -186,7 +191,7 @@ const Home = () => {
                     <img src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" />
                   </a>
                 </div>
-              </div>
+              </div> */}
 
               <div className="project flex flex-row-reverse w-full justify-center mb-44 skew-element">
                 <div className="project-title flex flex-col justify-end pb-32 ml-32">
@@ -194,7 +199,8 @@ const Home = () => {
                   <div className="default-paragraph inline-flex flex-row justify-start">             
                     <span className="line"></span>
                     <p className="text-25 text-white font-spectral">
-                      UI/UX design concept for a startup.
+                      Landing page design concept for a startup business.
+                      <span className="opacity-70 text-16 block font-light font-spectral">Role: <span className="text-primary opacity-50 text-16 font-light font-spectral">Designer</span></span>
                     </p>
                   </div>
                 </div>
@@ -214,7 +220,8 @@ const Home = () => {
                   <div className="default-paragraph inline-flex flex-row justify-start">             
                     <span className="line"></span>
                     <p className="text-25 text-white font-spectral">
-                      UI/UX Design and Web Development for a banking firm.
+                      A website for a rural bank.
+                      <span className="opacity-70 text-16 block font-light font-spectral">Role: <span className="text-primary opacity-50 text-16 font-light font-spectral">Designer, Developer</span></span>
                     </p>
                   </div>
                 </div>
@@ -235,6 +242,7 @@ const Home = () => {
                     <span className="line"></span>
                     <p className="text-25 text-white font-spectral">
                       Logo design for arts & crafts business.
+                      <span className="opacity-70 text-16 block font-light font-spectral">Role: <span className="text-primary opacity-50 text-16 font-light font-spectral">Designer</span></span>
                     </p>
                   </div>
                 </div>
@@ -255,6 +263,7 @@ const Home = () => {
                     <span className="line"></span>
                     <p className="text-25 text-white font-spectral">
                       Logo design for Divine San Diego, an Artisan.
+                      <span className="opacity-70 text-16 block font-light font-spectral">Role: <span className="text-primary opacity-50 text-16 font-light font-spectral">Designer</span></span>
                     </p>
                   </div>
                 </div>
@@ -275,6 +284,7 @@ const Home = () => {
                     <span className="line"></span>
                     <p className="text-25 text-white font-spectral">
                       Logo design for a footwear business.
+                      <span className="opacity-70 text-16 block font-light font-spectral">Role: <span className="text-primary opacity-50 text-16 font-light font-spectral">Designer</span></span>
                     </p>
                   </div>
                 </div>
@@ -302,7 +312,7 @@ const Home = () => {
             <div className="mt-8">
               <a className="font-montserrat text-16 text-secondary" href="mailto:crtved.artsandiego@gmail.com">crtved.artsandiego@gmail.com</a>
               <div className="flex flex-row mt-8 z-20">
-                <a href="https://www.github.com/crtved" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Behance</a>
+                <a href="https://www.github.com/crtved" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Github</a>
                 <a href="https://www.behance.net/crtved" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Behance</a>
                 <a href="https://www.instagram.com/crt.ved" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">LinkedIn</a>
                 <a href="https://www.linkedin.com/in/artsandiego/" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Facebook</a>
@@ -313,7 +323,7 @@ const Home = () => {
           <div className="mx-32">
             <p className="font-spectral text-secondary text-25">Experience</p>
             <div className="mt-8">
-              <p className="font-montserrat text-16 text-secondary mb-4">Creative Front-End Web Developer, UI/UX Designer and Founder <a className="underline font-bold" href="https://www.instagram.com/_crt.ved/" rel="noopener noreferrer">@CRTVED</a></p>
+              <p className="font-montserrat text-16 text-secondary mb-4">Creative Front-End Web Developer, UI/UX Designer and Founder <a className="alt underline font-bold" href="https://www.instagram.com/_crt.ved/" rel="noopener noreferrer" target="_blank">@CRTVED</a></p>
               <p className="font-montserrat text-16 text-secondary mb-4">Independent Web Development and UI Design Consultant</p>
               <p className="font-montserrat text-16 text-secondary mb-4">Creative Front-End Web Developer (Team Lead)</p>
               <p className="font-montserrat text-16 text-secondary mb-4">Junior Front-End Web Developer</p>
