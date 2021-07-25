@@ -1,6 +1,31 @@
 import Link from 'next/link'
+import { useQuery, gql } from '@apollo/client';
+import { useEffect } from 'react';
+
+const LINKS = gql`
+  query GetLinks{
+    navigationLinks {
+      id
+      title
+      link
+    }
+  }
+`;
 
 const Navigation = () => {
+  useEffect(() => {
+    let cursorContainer = document.querySelector(".cursor-container");
+    document.querySelectorAll('.alt').forEach(e => {
+      e.addEventListener('mousemove', () => {cursorContainer.classList.add('active-alt');})
+      e.addEventListener('mouseleave', () => {cursorContainer.classList.remove('active-alt');})
+    });
+  })
+
+  const { loading, error, data } = useQuery(LINKS);
+
+  if (loading) return <p>Loading...</p>
+  if (error) return <p>Error :( Error Message: {error}</p>
+
   return (
     <header className="flex justify-between items-start z-50 fixed">
       <img className="" className="" src="/assets/icons/artsandiego-crtved-logo.svg" alt="Art San Diego and CRTVED Logo" />
@@ -13,10 +38,11 @@ const Navigation = () => {
           <a href="https://www.fb.com/creativedeveloperph" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Instagram</a>
         </div>
         <nav className="navigation flex flex-col text-right top-auto">
-          <Link href="#about"><a className="alt font-montserrat text-white text-16 uppercase hover:text-primary">About Me</a></Link>
-          <Link href="#work"><a className="alt font-montserrat text-white text-16 uppercase hover:text-primary">CRTVED</a></Link>
-          <Link href="mailto:asd.artsandiego@gmail.com"><a className="alt font-montserrat text-white text-16 uppercase hover:text-primary">Hire Me</a></Link>
-          <Link href="#"><a className="alt line-through font-montserrat text-white text-16 uppercase hover:text-primary">Blog</a></Link>
+          {data.navigationLinks.map((navigationLink, i) => {
+            return (
+              <Link href={ navigationLink.link } key={ i }><a className="alt font-montserrat text-white text-16 uppercase hover:text-primary">{ navigationLink.title }</a></Link>
+            )
+          })}
         </nav>
       </div>
     </header>

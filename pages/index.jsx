@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import Navigation from 'components/Navigation'
-import { gsap } from "gsap";
-import { useEffect } from 'react'
-import Image from 'next/image';
 import CookieConsent from 'react-cookie-consent'
+import { useEffect } from 'react';
+import { gsap } from "gsap";
+import Projects from '../components/Projects';
 
 const Home = () => {
+  
   useEffect(() => {
     /* cursor follow animation */
     let cursorContainer = document.querySelector(".cursor-container");
@@ -20,26 +21,22 @@ const Home = () => {
     window.addEventListener('mousemove', moveCircle);
 
     /* when hovered on the different ctas */
+    const selectAll = (element) => { return document.querySelectorAll(element) }
+    const selectAllUnique = (element, trigger) => {
+      return document.querySelectorAll(element).forEach(e => {
+        e.addEventListener('mousemove', () => {cursorContainer.classList.add(trigger);})
+        e.addEventListener('mouseleave', () => {cursorContainer.classList.remove(trigger);})
+      });
+    }
     const ev = (selector) => {
       selector.addEventListener('mousemove', () => {cursorContainer.classList.add('active');})
       selector.addEventListener('mouseleave', () => {cursorContainer.classList.remove('active');})
     }
-    document.querySelectorAll('.placeholder').forEach(e => {ev(e)});
-    document.querySelectorAll('.cta').forEach(e => {ev(e)});
-    document.querySelectorAll('.eye').forEach(e => {ev(e)});
-    document.querySelectorAll('.illustrated-logo').forEach(e => {ev(e)});
-    document.querySelectorAll('.alt').forEach(e => {
-      e.addEventListener('mousemove', () => {cursorContainer.classList.add('active-alt');})
-      e.addEventListener('mouseleave', () => {cursorContainer.classList.remove('active-alt');})
-    });
-    document.querySelectorAll('.hover-dev').forEach(e => {
-      e.addEventListener('mousemove', () => {cursorContainer.classList.add('active-photo-dev');})
-      e.addEventListener('mouseleave', () => {cursorContainer.classList.remove('active-photo-dev');})
-    });
-    document.querySelectorAll('.hover-des').forEach(e => {
-      e.addEventListener('mousemove', () => {cursorContainer.classList.add('active-photo-des');})
-      e.addEventListener('mouseleave', () => {cursorContainer.classList.remove('active-photo-des');})
-    });
+    selectAll('.cta').forEach(e => {ev(e)});
+    selectAll('.floaters').forEach(e => {ev(e)});
+    selectAllUnique('.alt', 'active-alt');
+    selectAllUnique('.hover-dev', 'active-photo-dev');
+    selectAllUnique('.hover-des', 'active-photo-des');
 
     /* scroll wave */
     gsap.registerPlugin(ScrollTrigger);
@@ -76,7 +73,6 @@ const Home = () => {
         document.querySelector('.loading').classList.add('hidden');
       }, 3000)
     });
-  
   })
 
   return (
@@ -144,8 +140,8 @@ const Home = () => {
             </div>
 
             <div className="eyes">
-              <div className="eye"></div>
-              <div className="eye"></div>
+              <div className="floaters eye"></div>
+              <div className="floaters eye"></div>
             </div>
           </section>
           <section id="work" className="work skew-element">
@@ -164,141 +160,15 @@ const Home = () => {
                   </div>
                 </p>
               </div>
-              <div className="illustrated-logo absolute right-0 bottom-0">
+              <div className="floaters illustrated-logo absolute right-0 bottom-0">
                 <a className="block" href="/void" target="_blank" rel="noopener noreferrer">
-                  <img src="/assets/icons/logodrawing.svg" alt="Art San Diego logo pencil drawing" />
+                  <img src="/assets/icons/logodrawing.svg" alt="Hand drawn CRTVED logo" />
                 </a>
               </div>
             </div>
 
-            <div className="work-content">
-              
-              {/* <div className="project flex flex-row w-full justify-center mb-44 skew-element">
-                <div className="project-title flex flex-col justify-end pb-32 mr-32">
-                  <h2 className="work-title font-spectral text-primary text-60 z-20">Innersloth website</h2>
-                  <div className="default-paragraph inline-flex flex-row justify-start">             
-                    <span className="line"></span>
-                    <p className="text-25 text-white font-spectral">
-                      UI design concept for a game development company.
-                    </p>
-                  </div>
-                </div>
-                <div className="project-image work-content__image">
-                  <div className="placeholder"></div>
-                  <Image src="/assets/images/innersloth.jpg" alt="Innersloth website design thumbnail" height="600" width="550" />
-                  <a href="https://www.behance.net/gallery/121735575/Innersloth-Website-UIUX-Design-Concept" rel="noopener noreferrer" className="cta left absolute overflow-hidden text-transparent z-10" target="_blank">
-                    View Case Study
-                    <img src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" />
-                  </a>
-                </div>
-              </div> */}
-
-              <div className="project flex flex-row-reverse w-full justify-center mb-44 skew-element">
-                <div className="project-title flex flex-col justify-end pb-32 ml-32">
-                  <h2 className="font-spectral text-primary text-60 z-20">Sociov website</h2>
-                  <div className="default-paragraph inline-flex flex-row justify-start">             
-                    <span className="line"></span>
-                    <p className="text-25 text-white font-spectral">
-                      Landing page design concept for a startup business.
-                      <span className="opacity-70 text-16 block font-light font-spectral">Role: <span className="text-primary opacity-50 text-16 font-light font-spectral">Designer</span></span>
-                    </p>
-                  </div>
-                </div>
-                <div className="project-image work-content__image">
-                  <div className="placeholder"></div>
-                  <Image src="/assets/images/sociov.jpg" alt="Sociov website design thumbnail" height="600" width="550" />
-                  <a href="https://www.behance.net/gallery/121735799/Sociov-Website-UIUX-Design-Concept" rel="noopener noreferrer" className="cta right absolute overflow-hidden text-transparent z-10" target="_blank">
-                    View Case Study
-                    <img src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" />
-                  </a>
-                </div>
-              </div>
-
-              <div className="project flex flex-row w-full justify-center mb-44 skew-element">
-                <div className="project-title flex flex-col justify-end pb-32 mr-32">
-                  <h2 className="font-spectral text-primary text-60 z-20">Filidian Bank website</h2>
-                  <div className="default-paragraph inline-flex flex-row justify-start">             
-                    <span className="line"></span>
-                    <p className="text-25 text-white font-spectral">
-                      A website for a rural bank.
-                      <span className="opacity-70 text-16 block font-light font-spectral">Role: <span className="text-primary opacity-50 text-16 font-light font-spectral">Designer, Developer</span></span>
-                    </p>
-                  </div>
-                </div>
-                <div className=" project-image work-content__image">
-                  <div className="placeholder"></div>
-                  <Image src="/assets/images/filidianbank.jpg" alt="Filidian Bank website design thumbnail" height="600" width="550" />
-                  <a href="https://www.behance.net/gallery/122173739/Filidian-Bank-Website-UIUX-Design-Development" rel="noopener noreferrer" className="cta left absolute overflow-hidden text-transparent z-10" target="_blank">
-                    View Case Study
-                    <img src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" />
-                  </a>
-                </div>
-              </div>
-
-              <div className="project flex flex-row-reverse w-full justify-center mb-44 skew-element">
-                <div className="project-title flex flex-col justify-end pb-32 ml-32">
-                  <h2 className="font-spectral text-primary text-60 z-20">Kami Ai logo</h2>
-                  <div className="default-paragraph inline-flex flex-row justify-start">             
-                    <span className="line"></span>
-                    <p className="text-25 text-white font-spectral">
-                      Logo design for arts & crafts business.
-                      <span className="opacity-70 text-16 block font-light font-spectral">Role: <span className="text-primary opacity-50 text-16 font-light font-spectral">Designer</span></span>
-                    </p>
-                  </div>
-                </div>
-                <div className="project-image work-content__image">
-                  <div className="placeholder"></div>
-                  <Image src="/assets/images/kamiai.jpg" alt="Kami Ai logo" height="600" width="550" />
-                  <a href="#" className="cta right absolute overflow-hidden text-transparent z-10" target="_blank">
-                    View Case Study
-                    <img src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" />
-                  </a>
-                </div>
-              </div>
-
-              <div className="project flex flex-row w-full justify-center mb-44 skew-element">
-                <div className="project-title flex flex-col justify-end pb-32 mr-32">
-                  <h2 className="font-spectral text-primary text-60 z-20">Divine logo</h2>
-                  <div className="default-paragraph inline-flex flex-row justify-start">             
-                    <span className="line"></span>
-                    <p className="text-25 text-white font-spectral">
-                      Logo design for Divine San Diego, an Artisan.
-                      <span className="opacity-70 text-16 block font-light font-spectral">Role: <span className="text-primary opacity-50 text-16 font-light font-spectral">Designer</span></span>
-                    </p>
-                  </div>
-                </div>
-                <div className="project-image work-content__image">
-                  <div className="placeholder"></div>
-                  <Image src="/assets/images/divine.jpg" alt="Divine logo" height="600" width="550" />
-                  <a href="https://www.behance.net/gallery/115433221/Divine-Branding" className="cta left absolute overflow-hidden text-transparent z-10" target="_blank">
-                    View Case Study
-                    <img src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" />
-                  </a>
-                </div>
-              </div>
-
-              <div className="project flex flex-row-reverse w-full justify-center skew-element">
-                <div className="project-title flex flex-col justify-end pb-32 ml-32">
-                  <h2 className="font-spectral text-primary text-60 z-20">CENA Footwear</h2>
-                  <div className="default-paragraph inline-flex flex-row justify-start">             
-                    <span className="line"></span>
-                    <p className="text-25 text-white font-spectral">
-                      Logo design for a footwear business.
-                      <span className="opacity-70 text-16 block font-light font-spectral">Role: <span className="text-primary opacity-50 text-16 font-light font-spectral">Designer</span></span>
-                    </p>
-                  </div>
-                </div>
-                <div className="project-image work-content__image">
-                  <div className="placeholder"></div>
-                  <Image src="/assets/images/cena.jpg" alt="CENA Footwear logo" height="600" width="550" />
-                  <a href="#" className="cta right absolute overflow-hidden text-transparent z-10" target="_blank">
-                    View Case Study
-                    <img src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" />
-                  </a>
-                </div>
-              </div>
-
-            </div>
+            <Projects />
+            
           </section>
           <section className="contact z-20 relative">
             <p className="text-right text-125 font-spectral text-white">Something in your mind? perhaps an <span className="text-primary">idea</span>? I'm available for <span className="text-primary">
@@ -327,18 +197,17 @@ const Home = () => {
               <p className="font-montserrat text-16 text-secondary mb-4">Independent Web Development and UI Design Consultant</p>
               <p className="font-montserrat text-16 text-secondary mb-4">Creative Front-End Web Developer (Team Lead)</p>
               <p className="font-montserrat text-16 text-secondary mb-4">Junior Front-End Web Developer</p>
-              <a href="https://drive.google.com/file/d/18QoJVjZsRciNQa7dkz6FM4fvakqF1JlX/view" rel="noopener noreferrer" target="_blank" className="alt font-montserrat text-16 text-secondary font-bold underline uppercase">DOWNLOAD CV</a>
             </div>
           </div>
           <div>
             <p className="font-spectral text-secondary text-25">Tech used</p>
             <div className="mt-8">
-              <p className="font-montserrat text-16 text-secondary mb-4">Next JS (React JS)</p>
               <p className="font-montserrat text-16 text-secondary mb-4">TailwindCSS</p>
               <p className="font-montserrat text-16 text-secondary mb-4">GSAP</p>
-              <p className="font-montserrat text-16 text-secondary mb-4">Adobe Photoshop</p>
-              <p className="font-montserrat text-16 text-secondary mb-4">Adobe Illustrator</p>
-              <p className="font-montserrat text-16 text-secondary mb-4">Adobe XD</p>
+              <p className="font-montserrat text-16 text-secondary mb-4">Next JS / Vercel</p>
+              <p className="font-montserrat text-16 text-secondary mb-4">Strapi / Heroku</p>
+              <p className="font-montserrat text-16 text-secondary mb-4">GraphQL / MongoDB</p>
+              <p className="font-montserrat text-16 text-secondary mb-4">Adobe PS & XD</p>
             </div>
           </div>
         </footer>

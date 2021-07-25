@@ -56,6 +56,30 @@ section.work {
       margin: 500px auto;
     }
     .project {
+      &:nth-of-type(odd) {
+        flex-direction: row;
+        .project-title {
+          margin-right: 8rem;
+        }
+        .project-image {
+          .cta {
+            bottom: -100px;
+            left: -100px;
+          }
+        }
+      }
+      &:nth-of-type(even) {
+        flex-direction: row-reverse;
+        .project-title {
+          margin-left: 8rem;
+        }
+        .project-image {
+          .cta {
+            bottom: -100px;
+            right: -100px;
+          }
+        }
+      }
       @media screen and (max-width: 1024px) {
         flex-direction: column-reverse !important;
         align-items: center !important;
@@ -108,14 +132,6 @@ section.work {
         transition: all 0.2s ease-in-out;
         &:hover {
           opacity: 1;
-        }
-        &.left {
-          bottom: -100px;
-          left: -100px;
-        }
-        &.right {
-          bottom: -100px;
-          right: -100px;
         }
       }
       .placeholder {
