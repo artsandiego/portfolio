@@ -1,8 +1,9 @@
 import Head from 'next/head'
-import Navigation from 'components/Navigation'
 import CookieConsent from 'react-cookie-consent'
 import { useEffect } from 'react';
 import { gsap } from "gsap";
+import Image from 'next/image';
+import Navigation from 'components/Navigation'
 import Projects from '../components/Projects';
 
 const Home = () => {
@@ -28,7 +29,7 @@ const Home = () => {
         e.addEventListener('mouseleave', () => {cursorContainer.classList.remove(trigger);})
       });
     }
-    const ev = (selector) => {
+    const ev = selector => {
       selector.addEventListener('mousemove', () => {cursorContainer.classList.add('active');})
       selector.addEventListener('mouseleave', () => {cursorContainer.classList.remove('active');})
     }
@@ -99,8 +100,8 @@ const Home = () => {
               <span className="intro-text-items ml-60">UI <span className="text-primary hover-des">Designer</span></span>
             </h1>
             <a href="mailto:crtved.artsandiego@gmail.com" className="cta head-cta absolute overflow-hidden text-transparent">
-              Let's Talk
-              <img src="/assets/cta/cta-lets-talk.svg" alt="Let's Talk call to action" />
+              Let&aposs Talk
+              <Image src="/assets/cta/cta-lets-talk.svg" alt="Let's Talk call to action" height="225px" width="225px" />
             </a>
             <div className="scroll inline-flex flex-col items-center absolute left-0 -bottom-40">
               <a href="#about" className="alt text-16 font-montserrat text-white uppercase mb-1">Scroll</a>
@@ -162,7 +163,7 @@ const Home = () => {
               </div>
               <div className="floaters illustrated-logo absolute right-0 bottom-0">
                 <a className="block" href="/void" target="_blank" rel="noopener noreferrer">
-                  <img src="/assets/icons/logodrawing.svg" alt="Hand drawn CRTVED logo" height="180px" width="160px" />
+                  <Image src="/assets/icons/logodrawing.svg" alt="Hand drawn CRTVED logo" height="180px" width="160px" />
                 </a>
               </div>
             </div>
@@ -171,14 +172,14 @@ const Home = () => {
             
           </section>
           <section className="contact z-20 relative">
-            <p className="text-right text-125 font-spectral text-white">Something in your mind? perhaps an <span className="text-primary">idea</span>? I'm available for <span className="text-primary">
+            <p className="text-right text-125 font-spectral text-white">Something in your mind? perhaps an <span className="text-primary">idea</span>? I&apos;m available for <span className="text-primary">
             creative discussion
-            </span>.<br /><a className="text-white underline placeholder" href="mailto:crtved.artsandiego@gmail.com">Let's talk</a>.</p>
+            </span>.<br /><a className="text-white underline placeholder" href="mailto:crtved.artsandiego@gmail.com">Let&apos;s talk</a>.</p>
           </section>
         </main>
         <footer className="footer flex flex-row relative bg-primary z-20">
           <div>
-            <p className="font-spectral text-secondary text-25">Let's Talk</p>
+            <p className="font-spectral text-secondary text-25">Let&apos;s Talk</p>
             <div className="mt-8">
               <a className="font-montserrat text-16 text-secondary" href="mailto:crtved.artsandiego@gmail.com">crtved.artsandiego@gmail.com</a>
               <div className="flex flex-row mt-8 z-20">
@@ -213,7 +214,7 @@ const Home = () => {
         </footer>
         <div className="footer-low flex flex-row justify-between items-center">
           <p className="font-montserrat text-white text-16">© 2021 Art San Diego All rights reserved</p>
-          <p className="font-montserrat text-white text-16"><span className="text-primary">//</span>CRTVED</p>
+          <p className="font-montserrat text-white text-16"><span className="text-primary">@</span>CRTVED</p>
         </div>
       </div>
       <CookieConsent

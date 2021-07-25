@@ -46,7 +46,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
       </Html>
     )
   }

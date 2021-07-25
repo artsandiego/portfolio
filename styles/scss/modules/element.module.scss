@@ -364,16 +364,16 @@
     };
   }
   .c {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     position: absolute;
-    left: 400px;
-    bottom: 27%;
+    left: 59%;
+    bottom: 24%;
   }
   .c-vid {
-    display: none;
+    opacity: 0;
     &.active {
-      display: block;
+      opacity: 1;
     }
   }
 }

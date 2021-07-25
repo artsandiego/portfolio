@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { useQuery, gql } from '@apollo/client';
 import { useEffect } from 'react';
-
+import Image from 'next/image';
+ 
 const LINKS = gql`
   query GetLinks{
     navigationLinks {
@@ -28,7 +29,7 @@ const Navigation = () => {
 
   return (
     <header className="flex justify-between items-start z-50 fixed">
-      <img className="" className="" src="/assets/icons/artsandiego-crtved-logo.svg" alt="Personal brand of Art San Diego" height="58px" width="52px" />
+      <Image src="/assets/icons/artsandiego-crtved-logo.svg" alt="Personal brand of Art San Diego" height="58px" width="52px" />
       <div className="flex items-start">
         <div className="flex flex-row mr-16">
           <a href="https://www.github.com/crtved" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Behance</a>

@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
+import Image from 'next/image';
 
-const custom404 = () => {
+const Custom404 = () => {
   const [click, setClick] = useState("Well look who's here...");
   useEffect(() => {
     /* cursor follow animation */
@@ -41,7 +42,7 @@ const custom404 = () => {
       <div className="cursor-container"><div className="cursor"></div></div>
       <main className="for-o-for bg-primary flex flex-col items-center justify-center h-screen w-screen overflow-hidden">
         <div className="c"></div>
-        <img className="c-vid" src="/assets/images/cat.gif" alt="Surprised cat" />
+        <Image className="c-vid" src="/assets/images/cat.gif" alt="Surprised cat" height="215px" width="316px" />
         <p className="font-spectral text-125 text-secondary">{ click }</p>
         <p className="c-text font-montserrat text-25 text-secondary mb-16">Welcome to the void... nothing to see here... trust me.</p>
         <a href="/" className="alt font-montserrat text-16 text-secondary">Take me Home!</a>
@@ -50,4 +51,4 @@ const custom404 = () => {
   )
 }
 
-export default custom404;
+export default Custom404;

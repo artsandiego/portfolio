@@ -20,6 +20,11 @@ const PROJECTS = gql`
 const Projects = () => {
   useEffect(() => {
     let cursorContainer = document.querySelector(".cursor-container");
+    const ev = selector => {
+      selector.addEventListener('mousemove', () => {cursorContainer.classList.add('active');})
+      selector.addEventListener('mouseleave', () => {cursorContainer.classList.remove('active');})
+    }
+    document.querySelectorAll('.cta').forEach(e => {ev(e)});
     document.querySelectorAll('.placeholder').forEach(e => {
       e.addEventListener('mousemove', () => {cursorContainer.classList.add('active');})
       e.addEventListener('mouseleave', () => {cursorContainer.classList.remove('active');})
@@ -56,7 +61,7 @@ const Projects = () => {
               />
               <a href={ project.link } rel="noopener noreferrer" className="cta absolute overflow-hidden text-transparent z-10" target="_blank">
                 View Case Study
-                <img src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" />
+                <Image src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" height="225px" width="225px" />
               </a>
             </div>
           </div>
