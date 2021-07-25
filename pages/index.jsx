@@ -162,7 +162,7 @@ const Home = () => {
               </div>
               <div className="floaters illustrated-logo absolute right-0 bottom-0">
                 <a className="block" href="/void" target="_blank" rel="noopener noreferrer">
-                  <img src="/assets/icons/logodrawing.svg" alt="Hand drawn CRTVED logo" />
+                  <img src="/assets/icons/logodrawing.svg" alt="Hand drawn CRTVED logo" height="180px" width="160px" />
                 </a>
               </div>
             </div>
