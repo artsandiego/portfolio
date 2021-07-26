@@ -19,7 +19,6 @@ const client = new ApolloClient({
 const App = ({ Component, pageProps }) => {
   const router = useRouter()
   useEffect(() => {
-    /* Google tag integration */
     const handleRouteChange = (url) => {
       gtag.pageview(url)
     }
