@@ -31,7 +31,6 @@ const Projects = () => {
     });
   })
 
-  const API = process.env.API_URL
   const { loading, error, data } = useQuery(PROJECTS);
 
   if (loading) return <p>Loading...</p>
