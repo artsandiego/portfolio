@@ -9,6 +9,9 @@ section.introduction {
   @media screen and (max-width: 1740px) {
     width: 80%;
   }
+  @media screen and (max-width: 600px) {
+    height: 50rem;
+  }
   @include maxwidth;
   .label {
     width: 10rem;

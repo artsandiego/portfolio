@@ -5,11 +5,15 @@ header {
   // width: 100%;
   right: 0;
   left: 0;
+  
   @media screen and (max-width: 1920px) {
     width: 100%;
   }
   @media screen and (max-width: 1740px) {
     width: 80%;
+  }
+  @media screen and (max-width: 600px) {
+    padding-top: 50px;
   }
   &>div {
     @media screen and (max-width: 425px) {

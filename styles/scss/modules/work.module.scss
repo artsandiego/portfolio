@@ -56,15 +56,31 @@ section.work {
       margin: 500px auto;
     }
     .project {
+      @media screen and (max-width: 600px) {
+        margin-bottom: 100px;
+      }
       &:nth-of-type(odd) {
         flex-direction: row;
         .project-title {
           margin-right: 8rem;
+          @media screen and (max-width:600px) {
+            margin-right: 0;
+          }
         }
         .project-image {
           .cta {
             bottom: -100px;
             left: -200px;
+            @media screen and (max-width:768px) {
+              bottom: -180px;
+              left: auto;
+              right: -10px;          
+            }
+            @media screen and (max-width: 600px) {
+              bottom: -14rem;
+              left: auto;
+              right: 2rem;
+            }
           }
         }
       }
@@ -72,11 +88,25 @@ section.work {
         flex-direction: row-reverse;
         .project-title {
           margin-left: 8rem;
+          @media screen and (max-width:768px) {
+            margin-right: 8rem;
+            margin-left: 0;
+          }
         }
         .project-image {
           .cta {
             bottom: -100px;
             right: -100px;
+            @media screen and (max-width:768px) {
+              bottom: -180px;
+              left: auto;
+              right: -10px;          
+            }
+            @media screen and (max-width: 600px) {
+              bottom: -14rem;
+              left: auto;
+              right: 2rem;
+            }
           }
         }
       }
@@ -120,6 +150,9 @@ section.work {
       }
       span.line {
         width: 80px;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
       p {
         width: 20rem;
