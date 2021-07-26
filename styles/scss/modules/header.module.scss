@@ -2,7 +2,6 @@ header {
   @include maxwidth;
   padding-top: 100px;
   position: fixed;
-  // width: 100%;
   right: 0;
   left: 0;
   
@@ -14,6 +13,7 @@ header {
   }
   @media screen and (max-width: 600px) {
     padding-top: 50px;
+    align-items: flex-end !important;
   }
   &>div {
     @media screen and (max-width: 425px) {
@@ -30,7 +30,7 @@ header {
     &>div {
       @media screen and (max-width: 425px) {
         margin-right: 0 !important;  
-        margin-bottom: 16px;
+        margin-bottom: 0;
       }
     }
   }

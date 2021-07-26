@@ -283,6 +283,9 @@
 
 .navigation {
   right: 122px;
+  @media screen and (max-width: 600px) {
+    display: none !important;
+  }
 }
 
 .loading {
