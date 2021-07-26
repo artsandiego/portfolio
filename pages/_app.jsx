@@ -10,9 +10,8 @@ import '../styles/scss/app.scss'
 import '../styles/tailwind/tailwind.css'
 
 /* Apollo Client */
-const API = process.env.API_URL
 const client = new ApolloClient({
-  uri: API+'/graphql',
+  uri: 'https://strapi-artsandiego.herokuapp.com/graphql',
   cache: new InMemoryCache()
 })
 
