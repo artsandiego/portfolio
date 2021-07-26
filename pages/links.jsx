@@ -41,8 +41,8 @@ const Links = () => {
 
   const { loading, error, data } = useQuery(LOGO);
 
-  if (loading) return <p>Loading...</p>
-  if (error) return <p>Error :( Error Message: {error}</p>
+  if (loading) return <p className="hidden">Loading...</p>
+  if (error) return <p className="hidden">Error :( Error Message: {error}</p>
 
   return (
     <>
@@ -55,15 +55,15 @@ const Links = () => {
       <section className="h-screen w-3/4 mx-auto flex justify-center items-center">
         <div className="flex flex-col text-center">
           <Image src={data.logo.image.url} alt={data.logo.image.alternativeText} height="58px" width="52px" />
-          <p className="text-white font-montserrat text-25 mt-8 z-10">CRTVED</p>
-          <p className="text-white font-montserrat text-25 z-10">Pronounced /kree·ay·tuhv/ Crafting aesthetic experiences for the web. 🔥</p>
+          <p className="sm:text-16 text-white font-montserrat lg:text-25 mt-8 z-10">CRTVED</p>
+          <p className="sm:text-16 text-white font-montserrat lg:text-25 z-10">Pronounced /kree·ay·tuhv/ Crafting aesthetic experiences for the web. 🔥</p>
           <div className="flex flex-col mt-8">
-            <Link href="https://artsandiego.dev"><a className="alt text-secondary font-montserrat text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Portfolio</a></Link>
-            <Link href="https://instagram.com/_crt.ved"><a className="alt text-secondary font-montserrat text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Instagram</a></Link>
-            <Link href="https://behance.net/crtved"><a className="alt text-secondary font-montserrat text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Behance</a></Link>
-            <Link href="https://github.com/crtved"><a className="alt text-secondary font-montserrat text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Github</a></Link>
-            <Link href="https://fb.com/creativedeveloperph"><a className="alt text-secondary font-montserrat text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Facebook Page</a></Link>
-            <Link href="https://linkedin.com/in/artsandiego"><a className="alt text-secondary font-montserrat text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">LinkedIn</a></Link>
+            <Link href="https://artsandiego.dev"><a className="alt text-secondary font-montserrat sm:text-16 lg:text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Portfolio</a></Link>
+            <Link href="https://instagram.com/_crt.ved"><a className="alt text-secondary font-montserrat sm:text-16 lg:text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Instagram</a></Link>
+            <Link href="https://behance.net/crtved"><a className="alt text-secondary font-montserrat sm:text-16 lg:text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Behance</a></Link>
+            <Link href="https://github.com/crtved"><a className="alt text-secondary font-montserrat sm:text-16 lg:text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Github</a></Link>
+            <Link href="https://fb.com/creativedeveloperph"><a className="alt text-secondary font-montserrat sm:text-16 lg:text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Facebook Page</a></Link>
+            <Link href="https://linkedin.com/in/artsandiego"><a className="alt text-secondary font-montserrat sm:text-16 lg:text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">LinkedIn</a></Link>
           </div>
         </div>
       </section>
