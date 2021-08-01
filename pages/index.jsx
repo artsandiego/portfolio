@@ -99,7 +99,7 @@ const Home = () => {
               <span className="intro-text-items text-white font-spectral leading-tight"><span className=" text-primary hover-dev">Developer</span> & </span><br />
               <span className="intro-text-items ml-60">UI <span className="text-primary hover-des">Designer</span></span>
             </h1>
-            <a href="mailto:crtved.artsandiego@gmail.com" className="cta head-cta absolute overflow-hidden text-transparent">
+            <a href="mailto:asd.artsandiego@gmail.com" className="cta head-cta absolute overflow-hidden text-transparent">
               Let&aposs Talk
               <Image src="/assets/cta/cta-lets-talk.svg" alt="Let's Talk call to action" height="225px" width="225px" />
             </a>
@@ -152,12 +152,9 @@ const Home = () => {
               <div className="default-paragraph work-section inline-flex flex-row justify-start">             
                 <span className="line"></span>
                 <p className="text-25 text-white font-spectral">
-                  The brand <a className="alt underline text-primary font-bold" href="https://www.instagram.com/_crt.ved" rel="noopener noreferrer" target="_blank">CRTVED</a> <span className="opacity-50">(Pronounced /kree·ay·tuhv/ a wordplay for Creative Developer)</span> was established to create a platform where I can be my creative self. At CRTVED we prioritize experience as we believe that <span className="text-primary font-bold">human experience bridges the gap between form and function</span>.
+                  The brand <a className="alt underline text-primary font-bold" href="https://www.instagram.com/crt.ved" rel="noopener noreferrer" target="_blank">CRTVED</a> <span className="opacity-50">(Pronounced /kree·ay·tuhv/ a wordplay for Creative Developer)</span> was established to create a platform where I can be my creative self. At CRTVED we prioritize experience as we believe that <span className="text-primary font-bold">human experience bridges the gap between form and function</span>.
                   <div className="mt-4">
-                    Here are some of our work.
-                  </div>
-                  <div>
-                    Visit our <a className="alt text-primary font-bold underline" href="https://github.com/crtved" rel="noopener noreferrer" target="_blank">Github</a> or <a className="alt text-primary font-bold underline" href="https://behance.net/crtved" rel="noopener noreferrer" target="_blank">Behance</a> for more.
+                    Here are some of our work, you can also check us out on <a className="alt text-primary font-bold underline" href="https://github.com/crtved" rel="noopener noreferrer" target="_blank">Github</a> or <a className="alt text-primary font-bold underline" href="https://behance.net/crtved" rel="noopener noreferrer" target="_blank">Behance</a>.
                   </div>
                 </p>
               </div>
@@ -174,29 +171,29 @@ const Home = () => {
           <section className="contact z-20 relative">
             <p className="text-right text-125 font-spectral text-white">Something in your mind? perhaps an <span className="text-primary">idea</span>? I&apos;m available for <span className="text-primary">
             creative discussion
-            </span>.<br /><a className="text-white underline placeholder" href="mailto:crtved.artsandiego@gmail.com">Let&apos;s talk</a>.</p>
+            </span>.<br /><a className="text-white underline placeholder" href="mailto:asd.artsandiego@gmail.com">Let&apos;s talk</a>.</p>
           </section>
         </main>
-        <footer className="footer flex flex-row relative bg-primary z-20">
+        <footer id="contact" className="footer flex flex-row relative bg-primary z-20">
           <div>
             <p className="font-spectral text-secondary text-25">Let&apos;s Talk</p>
             <div className="mt-8">
-              <a className="font-montserrat text-16 text-secondary" href="mailto:crtved.artsandiego@gmail.com">crtved.artsandiego@gmail.com</a>
+              <a className="font-montserrat text-16 text-secondary" href="mailto:asd.artsandiego@gmail.com">asd.artsandiego@gmail.com</a>
               <div className="flex flex-row mt-8 z-20">
                 <a href="https://www.github.com/crtved" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Github</a>
                 <a href="https://www.behance.net/crtved" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Behance</a>
                 <a href="https://www.instagram.com/crt.ved" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">LinkedIn</a>
                 <a href="https://www.linkedin.com/in/artsandiego/" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Facebook</a>
-                <a href="https://www.fb.com/creativedeveloperph" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Instagram</a>
+                <a href="https://www.fb.com/crtved.us" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Instagram</a>
               </div>
             </div>
           </div>
           <div className="mx-32">
             <p className="font-spectral text-secondary text-25">Experience</p>
             <div className="mt-8">
-              <p className="font-montserrat text-16 text-secondary mb-4">Creative Front-End Web Developer, UI/UX Designer and Founder <a className="alt underline font-bold" href="https://www.instagram.com/_crt.ved/" rel="noopener noreferrer" target="_blank">@CRTVED</a></p>
-              <p className="font-montserrat text-16 text-secondary mb-4">Independent Web Development and UI Design Consultant</p>
-              <p className="font-montserrat text-16 text-secondary mb-4">Creative Front-End Web Developer (Team Lead)</p>
+              <p className="font-montserrat text-16 text-secondary mb-4">Creative Developer, UI/UX Designer and Founder <a className="alt underline font-bold" href="https://www.facebook.com/crtved.us/" rel="noopener noreferrer" target="_blank">@CRTVED</a></p>
+              <p className="font-montserrat text-16 text-secondary mb-4">Independent Web Dev & Web Design consultant | Senior Developer</p>
+              <p className="font-montserrat text-16 text-secondary mb-4">Lead Creative Front-End Web Developer</p>
               <p className="font-montserrat text-16 text-secondary mb-4">Junior Front-End Web Developer</p>
             </div>
           </div>

@@ -1,21 +1,64 @@
 import Image from 'next/image';
-import { useQuery, gql } from '@apollo/client';
+// import { useQuery, gql } from '@apollo/client';
 import { useEffect } from 'react';
 
-const PROJECTS = gql`
-  query GetProjects {
-    projects {
-      title
-      description
-      role
-      link
-      image {
-        url
-        alternativeText
-      }
-    }
+// const PROJECTS = gql`
+//   query GetProjects {
+//     projects {
+//       title
+//       description
+//       role
+//       link
+//       image {
+//         url
+//         alternativeText
+//       }
+//     }
+//   }
+// `;
+
+const PROJECT_DATA = [
+  {
+    title: "Sociov Website",
+    description: "Landing page design concept for a startup business.",
+    role: "Designer",
+    image: "/assets/images/sociov.jpg",
+    alt: "Sociov Project Thumbnail",
+    link: "https://www.behance.net/gallery/121735799/Sociov-Website-UIUX-Design-Concept"
+  },
+  {
+    title: "Filidian Bank Website",
+    description: "A website for a rural bank.",
+    role: "Designer, Developer",
+    image: "/assets/images/filidianbank.jpg",
+    alt: "Filidian Bank Project Thumbnail",
+    link: "https://www.behance.net/gallery/122173739/Filidian-Bank-Website-UIUX-Design-Development"
+  },
+  {
+    title: "Kami Ai Logo",
+    description: "Brand identity design for arts & crafts bizz.",
+    role: "Designer",
+    image: "/assets/images/kamiai.jpg",
+    alt: "Kami-ai Project Thumbnail",
+    link: "#"
+  },
+  {
+    title: "Divine Logo",
+    description: "Personal branding for Divine San Diego, an Artisan.",
+    role: "Designer",
+    image: "/assets/images/divine.jpg",
+    alt: "Divine Project Thumbnail",
+    link: "https://www.behance.net/gallery/115433221/Divine-Branding"
+  },
+  {
+    title: "CENA Footwear",
+    description: "Brand identity design for a footwear business.",
+    role: "Designer",
+    image: "/assets/images/cena.jpg",
+    alt: "CENA Project Thumbnail",
+    link: "#"
   }
-`;
+]
 
 const Projects = () => {
   useEffect(() => {
@@ -31,14 +74,14 @@ const Projects = () => {
     });
   })
 
-  const { loading, error, data } = useQuery(PROJECTS);
+  // const { loading, error, data } = useQuery(PROJECTS);
 
-  if (loading) return <p>Loading...</p>
-  if (error) return <p>Error :( Error Message: {error}</p>
+  // if (loading) return <p>Loading...</p>
+  // if (error) return <p>Error :( Error Message: {error}</p>
 
   return (
     <div className="work-content">
-      {data.projects.map((project, i) => {
+      {/* {data.projects.map((project, i) => {
         return (
           <div key={ i } className="project flex flex-row w-full justify-center mb-44 skew-element">  
             <div className="project-title flex flex-col justify-end pb-32 mr-32">
@@ -65,7 +108,37 @@ const Projects = () => {
             </div>
           </div>
         )
-      })}
+      })} */}
+      {
+        PROJECT_DATA.map((project, i) => {
+          return (
+            <div key={ i } className="project flex flex-row w-full justify-center mb-44 skew-element">  
+              <div className="project-title flex flex-col justify-end pb-32 mr-32">
+                <h2 className="font-spectral text-primary text-60 z-20">{ project.title }</h2>
+                <div className="default-paragraph inline-flex flex-row justify-start">             
+                  <span className="line"></span>
+                  <p className="text-25 text-white font-spectral">
+                    { project.description }
+                    <span className="opacity-70 text-16 block font-light font-spectral">Role: <span className="text-primary opacity-50 text-16 font-light font-spectral">{ project.role }</span></span>
+                  </p>
+                </div>
+              </div>
+              <div className="project-image work-content__image">
+                <div className="placeholder"></div>
+                <Image
+                  src={project.image}
+                  height="600" width="550"
+                  alt={project.alt}
+                />
+                <a href={ project.link } rel="noopener noreferrer" className="cta absolute overflow-hidden text-transparent z-10" target="_blank">
+                  View Case Study
+                  <Image src="/assets/cta/cta-view-case-study.svg" alt="View Case Study call to action" height="225px" width="225px" />
+                </a>
+              </div>
+            </div>
+          )
+        })
+      }
     </div>
   );
 }
