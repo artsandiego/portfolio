@@ -45,10 +45,10 @@ const Custom404 = () => {
       </Head>
       <div className="cursor-container"><div className="cursor"></div></div>
       <main className="for-o-for bg-primary flex flex-col items-center justify-center h-screen w-screen overflow-hidden">
-        <div className="parent">
+        {/* <div className="parent">
           <div className="hoveritem" onMouseEnter={(e) => {hover(e)}}>Hover Me</div>
           <div className="hoveritem">I will change if you hover him</div>
-        </div>
+        </div> */}
         <div className="c"></div>
         <Image className="c-vid" src="/assets/images/cat.gif" alt="Surprised cat" height="215px" width="316px" />
         <p className="font-spectral text-125 text-secondary">{ click }</p>
