@@ -35,7 +35,7 @@ const Navigation = () => {
 
   return (
     <header className="flex justify-between items-start z-50 fixed">
-      <Image src="/assets/images/logo.png" alt="Art San Diego and CRTVED Logo" height="52px" width="58px" />
+      <Image src="/assets/images/logo.png" alt="Art San Diego and THE LIBRVN Logo" height="52px" width="58px" />
       <div className="flex items-start">
         <div className="flex flex-row mr-16">
           <a href="https://www.github.com/thelibrvn" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Behance</a>

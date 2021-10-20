@@ -39,23 +39,23 @@ export default class MyDocument extends Document {
             }}
           />
           <script data-ad-client="ca-pub-7734586900480329" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <meta name="title" content="Art San Diego | CRTVED" />
+          <meta name="title" content="Art San Diego | THE LIBRVN" />
           <link rel="icon" type="image/png" href="/artsandiego-icon.png" />
           <meta name="description" content="/kree·ay·tuhv/ | Crafting digital aesthetic experiences"/>
-          <meta name="keywords" content="artsandiego, crtved, web, developer, front-end, freelance, website, designer, ui, ux, startup, small business"/>
+          <meta name="keywords" content="artsandiego, thelibrvn, web, developer, front-end, freelance, website, designer, ui, ux, startup, small business"/>
 
           <meta property="og:type" content="website"/>
           <meta property="og:url" content="https://artsandiego.dev/"/>
-          <meta property="og:title" content="CRTVED"/>
-          <meta property="og:description" content="/kree·ay·tuhv/ | Crafting digital aesthetic experiences"/>
+          <meta property="og:title" content="THE LIBRVN"/>
+          <meta property="og:description" content="Building aesthetic experiences for the web"/>
           <meta property="og:image" content="https://raw.githubusercontent.com/crtved/artsandiego/master/public/artsandiego-crtved-social-image.png"/>
 
           <meta property="twitter:card" content="summary_large_image"/>
-          <meta property="twitter:site" content="@artsandiego"/>
+          <meta property="twitter:site" content="@thelibrvn"/>
           <meta property="twitter:image" content="https://raw.githubusercontent.com/crtved/artsandiego/master/public/artsandiego-crtved-social-image.png" />
-          <meta property="twitter:title" content="CRTVED"/>
+          <meta property="twitter:title" content="THE LIBRVN"/>
           <meta property="twitter:url" content="https://artsandiego.dev/"/>
-          <meta property="twitter:description" content="/kree·ay·tuhv/ | Crafting digital aesthetic experiences"/>
+          <meta property="twitter:description" content="Building aesthetic experiences for the web"/>
         </Head>
         <body>
           <Main />

@@ -55,7 +55,7 @@ const Links = () => {
       <section className="h-screen w-3/4 mx-auto flex justify-center items-center">
         <div className="flex flex-col text-center">
           <div>
-            <Image src="/assets/images/logo.png" alt="Art San Diego and CRTVED Logo" height="52" width="58" />
+            <Image src="/assets/images/logo.png" alt="Art San Diego and THELIBRVN Logo" height="52" width="58" />
           </div>
           <p className="sm:text-16 text-white font-montserrat lg:text-25 mt-8 z-10">THE LIBRVN</p>
           <p className="sm:text-16 text-white font-montserrat lg:text-25 z-10">Building aesthetic experiences for the web. ⚡</p>
