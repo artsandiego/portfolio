@@ -152,7 +152,7 @@ const Home = () => {
               <div className="default-paragraph work-section inline-flex flex-row justify-start">             
                 <span className="line"></span>
                 <p className="text-25 text-white font-spectral">
-                  The brand aims to produce quality content that can be an inspiration to other creative individuals, wether you're just starting out or coming from other field. <span className="text-primary font-bold">THE LIBRVN</span> is also providing services that help SMEs and Startups jumpstart their digital journey.
+                  The brand aims to produce quality content that can be an inspiration to other creative individuals, wether you&apos;re just starting out or coming from other field. <span className="text-primary font-bold">THE LIBRVN</span> is also providing services that help SMEs and Startups jumpstart their digital journey.
                   <div className="mt-4">
                     Here are some of our work, you can also check us out on <a className="alt text-primary font-bold underline" href="https://github.com/thelibrvn" rel="noopener noreferrer" target="_blank">Github</a> or <a className="alt text-primary font-bold underline" href="https://behance.net/thelibrvn" rel="noopener noreferrer" target="_blank">Behance</a>.
                   </div>
