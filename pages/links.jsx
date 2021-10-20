@@ -57,14 +57,14 @@ const Links = () => {
           <div>
             <Image src="/assets/images/logo.png" alt="Art San Diego and CRTVED Logo" height="52" width="58" />
           </div>
-          <p className="sm:text-16 text-white font-montserrat lg:text-25 mt-8 z-10">Art San Diego | CRTVED</p>
-          <p className="sm:text-16 text-white font-montserrat lg:text-25 z-10">/kree·ay·tuhv/<br/>Building aesthetic experiences for the web. ⚡</p>
+          <p className="sm:text-16 text-white font-montserrat lg:text-25 mt-8 z-10">THE LIBRVN</p>
+          <p className="sm:text-16 text-white font-montserrat lg:text-25 z-10">Building aesthetic experiences for the web. ⚡</p>
           <div className="flex flex-col mt-8">
             <Link href="https://artsandiego.dev"><a className="alt text-secondary font-montserrat sm:text-16 lg:text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Portfolio</a></Link>
-            <Link href="https://instagram.com/crt.ved"><a className="alt text-secondary font-montserrat sm:text-16 lg:text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Instagram</a></Link>
-            <Link href="https://behance.net/crtved"><a className="alt text-secondary font-montserrat sm:text-16 lg:text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Behance</a></Link>
-            <Link href="https://github.com/crtved"><a className="alt text-secondary font-montserrat sm:text-16 lg:text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Github</a></Link>
-            <Link href="https://fb.com/crtved.us"><a className="alt text-secondary font-montserrat sm:text-16 lg:text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Facebook Page</a></Link>
+            <Link href="https://instagram.com/thelibrvn"><a className="alt text-secondary font-montserrat sm:text-16 lg:text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Instagram</a></Link>
+            <Link href="https://behance.net/thelibrvn"><a className="alt text-secondary font-montserrat sm:text-16 lg:text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Behance</a></Link>
+            <Link href="https://github.com/thelibrvn"><a className="alt text-secondary font-montserrat sm:text-16 lg:text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Github</a></Link>
+            <Link href="https://fb.com/thelibrvn"><a className="alt text-secondary font-montserrat sm:text-16 lg:text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">Facebook Page</a></Link>
             <Link href="https://linkedin.com/in/artsandiego"><a className="alt text-secondary font-montserrat sm:text-16 lg:text-25 font-bold uppercase my-4 z-10 bg-primary py-4 px-32 rounded-lg" rel="noopener noreferrer" target="_blank">LinkedIn</a></Link>
           </div>
         </div>

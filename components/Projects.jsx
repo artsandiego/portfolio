@@ -19,11 +19,27 @@ import { useEffect } from 'react';
 
 const PROJECT_DATA = [
   {
-    title: "Sociov Website",
-    description: "Landing page design concept for a startup business.",
-    role: "Designer",
-    image: "/assets/images/sociov.jpg",
-    alt: "Sociov Project Thumbnail",
+    title: "THE LIBRVN",
+    description: "Brand identity design for the librvn.",
+    role: "Logo/Brand Identity Designer",
+    image: "/assets/images/thelibrvn.png",
+    alt: "The Librvn",
+    link: "https://www.behance.net/gallery/129483121/THE-LIBRVN-Brand-Identity-Design"
+  },
+  {
+    title: "Beyond The Box",
+    description: "Design concept for a gadget store.",
+    role: "UI Designer",
+    image: "/assets/images/beyondthebox.png",
+    alt: "Beyond the box design concept",
+    link: "https://www.behance.net/gallery/125907337/Beyondthebox-Landing-Page-Design-Concept"
+  },
+  {
+    title: "Notion",
+    description: "A case study for one of the best app out there.",
+    role: "UI/UX Designer",
+    image: "/assets/images/notion.png",
+    alt: "Notion Case Study Thumbnail",
     link: "https://www.behance.net/gallery/121735799/Sociov-Website-UIUX-Design-Concept"
   },
   {
@@ -35,29 +51,37 @@ const PROJECT_DATA = [
     link: "https://www.behance.net/gallery/122173739/Filidian-Bank-Website-UIUX-Design-Development"
   },
   {
-    title: "Kami Ai Logo",
-    description: "Brand identity design for arts & crafts bizz.",
+    title: "Sociov Website",
+    description: "Landing page design concept for a startup business.",
     role: "Designer",
-    image: "/assets/images/kamiai.jpg",
-    alt: "Kami-ai Project Thumbnail",
-    link: "#"
+    image: "/assets/images/sociov.jpg",
+    alt: "Sociov Project Thumbnail",
+    link: "https://www.behance.net/gallery/121735799/Sociov-Website-UIUX-Design-Concept"
   },
+  // {
+  //   title: "Kami Ai Logo",
+  //   description: "Brand logo design for arts & crafts bizz.",
+  //   role: "Designer",
+  //   image: "/assets/images/kamiai.jpg",
+  //   alt: "Kami-ai Project Thumbnail",
+  //   link: "https://www.instagram.com/kami_ai_/"
+  // },
   {
     title: "Divine Logo",
-    description: "Personal branding for Divine San Diego, an Artisan.",
-    role: "Designer",
+    description: "Brand Logo design for Divine San Diego, an Artisan.",
+    role: "Logo Designer",
     image: "/assets/images/divine.jpg",
     alt: "Divine Project Thumbnail",
     link: "https://www.behance.net/gallery/115433221/Divine-Branding"
   },
-  {
-    title: "CENA Footwear",
-    description: "Brand identity design for a footwear business.",
-    role: "Designer",
-    image: "/assets/images/cena.jpg",
-    alt: "CENA Project Thumbnail",
-    link: "#"
-  }
+  // {
+  //   title: "CENA Footwear",
+  //   description: "Brand logo design for a footwear business.",
+  //   role: "Designer",
+  //   image: "/assets/images/cena.jpg",
+  //   alt: "CENA Project Thumbnail",
+  //   link: "https://www.facebook.com/cenafootwear"
+  // }
 ]
 
 const Projects = () => {

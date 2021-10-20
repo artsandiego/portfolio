@@ -137,7 +137,7 @@ const Home = () => {
                 <div className="box"></div>
                 <div className="box"></div>
                 <div className="box"></div>
-              </div>
+              </div> 
             </div>
 
             <div className="eyes">
@@ -146,21 +146,21 @@ const Home = () => {
             </div>
           </section>
           <section id="work" className="work skew-element">
-            <h1 className="title relative z-10 inline-block text-white text-100 font-spectral leading-tight">CRTVED</h1>
+            <h1 className="title relative z-10 inline-block text-white text-100 font-spectral leading-tight">THE LIBRVN</h1>
 
             <div className="flex flex-row flex-1 relative h-40">
               <div className="default-paragraph work-section inline-flex flex-row justify-start">             
                 <span className="line"></span>
                 <p className="text-25 text-white font-spectral">
-                  The brand <a className="alt underline text-primary font-bold" href="https://www.instagram.com/crt.ved" rel="noopener noreferrer" target="_blank">CRTVED</a> <span className="opacity-50">(Pronounced /kree·ay·tuhv/ a wordplay for Creative Developer)</span> was established to create a platform where I can be my creative self. At CRTVED we prioritize experience as we believe that <span className="text-primary font-bold">human experience bridges the gap between form and function</span>.
+                  The brand aims to produce quality content that can be an inspiration to other creative individuals, wether you're just starting out or coming from other field. <span className="text-primary font-bold">THE LIBRVN</span> is also providing services that help SMEs and Startups jumpstart their digital journey.
                   <div className="mt-4">
-                    Here are some of our work, you can also check us out on <a className="alt text-primary font-bold underline" href="https://github.com/crtved" rel="noopener noreferrer" target="_blank">Github</a> or <a className="alt text-primary font-bold underline" href="https://behance.net/crtved" rel="noopener noreferrer" target="_blank">Behance</a>.
+                    Here are some of our work, you can also check us out on <a className="alt text-primary font-bold underline" href="https://github.com/thelibrvn" rel="noopener noreferrer" target="_blank">Github</a> or <a className="alt text-primary font-bold underline" href="https://behance.net/thelibrvn" rel="noopener noreferrer" target="_blank">Behance</a>.
                   </div>
                 </p>
               </div>
               <div className="floaters illustrated-logo absolute right-0 bottom-0">
                 <a className="block" href="/void" target="_blank" rel="noopener noreferrer">
-                  <Image src="/assets/icons/logodrawing.svg" alt="Hand drawn CRTVED logo" height="180px" width="160px" />
+                  <Image src="/assets/icons/logodrawing.svg" alt="Hand drawn THELIBRVN logo" height="180px" width="160px" />
                 </a>
               </div>
             </div>
@@ -169,9 +169,8 @@ const Home = () => {
             
           </section>
           <section className="contact z-20 relative">
-            <p className="text-right text-125 font-spectral text-white">Something in your mind? perhaps an <span className="text-primary">idea</span>? I&apos;m available for <span className="text-primary">
-            creative discussion
-            </span>.<br /><a className="text-white underline placeholder" href="mailto:asd.artsandiego@gmail.com">Let&apos;s talk</a>.</p>
+            <p className="text-right text-125 font-spectral text-white">Something in your mind? perhaps another<br/>
+              <span className="text-primary">awesome idea</span>? <br /><a className="text-white underline placeholder" href="mailto:asd.artsandiego@gmail.com">Let&apos;s talk</a>.</p>
           </section>
         </main>
         <footer id="contact" className="footer flex flex-row relative bg-primary z-20">
@@ -180,18 +179,18 @@ const Home = () => {
             <div className="mt-8">
               <a className="font-montserrat text-16 text-secondary" href="mailto:asd.artsandiego@gmail.com">asd.artsandiego@gmail.com</a>
               <div className="flex flex-row mt-8 z-20">
-                <a href="https://www.github.com/crtved" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Github</a>
-                <a href="https://www.behance.net/crtved" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Behance</a>
-                <a href="https://www.instagram.com/crt.ved" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">LinkedIn</a>
+                <a href="https://www.github.com/thelibrvn" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Github</a>
+                <a href="https://www.behance.net/thelibrvn" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Behance</a>
+                <a href="https://www.instagram.com/thelibrvn" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">LinkedIn</a>
                 <a href="https://www.linkedin.com/in/artsandiego/" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Facebook</a>
-                <a href="https://www.fb.com/crtved.us" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Instagram</a>
+                <a href="https://www.fb.com/thelibrvn" target="_blank" rel="noreferrer noopener" className="alt socials mx-2 text-transparent">Instagram</a>
               </div>
             </div>
           </div>
           <div className="mx-32">
             <p className="font-spectral text-secondary text-25">Experience</p>
             <div className="mt-8">
-              <p className="font-montserrat text-16 text-secondary mb-4">Creative Developer, UI/UX Designer and Founder <a className="alt underline font-bold" href="https://www.facebook.com/crtved.us/" rel="noopener noreferrer" target="_blank">@CRTVED</a></p>
+              <p className="font-montserrat text-16 text-secondary mb-4">Creative Developer, UI/UX Designer and Founder <a className="alt underline font-bold" href="https://www.facebook.com/thelibrvn" rel="noopener noreferrer" target="_blank">@THE LIBRVN</a></p>
               <p className="font-montserrat text-16 text-secondary mb-4">Independent Web Dev & Web Design consultant | Senior Developer</p>
               <p className="font-montserrat text-16 text-secondary mb-4">Lead Creative Front-End Web Developer</p>
               <p className="font-montserrat text-16 text-secondary mb-4">Junior Front-End Web Developer</p>
@@ -210,8 +209,8 @@ const Home = () => {
           </div>
         </footer>
         <div className="footer-low flex flex-row justify-between items-center">
-          <p className="font-montserrat text-white text-16">© 2021 Art San Diego All rights reserved</p>
-          <p className="font-montserrat text-white text-16"><span className="text-primary">@</span>CRTVED</p>
+          <p className="font-montserrat text-white text-16">© 2021 Art San Diego, All rights reserved</p>
+          <p className="font-montserrat text-white text-16"><span className="text-primary">@</span>THELIBRVN</p>
         </div>
       </div>
       <CookieConsent
